@@ -1,0 +1,5 @@
+<div *ngIf="article" class="container">
+  <img src="{{article.picture}}" alt="article pic" width="400" height="290">
+  <h2>{{article.titre | uppercase}}</h2>
+  <p>{{article.contenu}}</p>
+</div>

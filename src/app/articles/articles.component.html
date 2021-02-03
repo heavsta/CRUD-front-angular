@@ -1,0 +1,18 @@
+<h2>Article List</h2>
+<div class="container">
+    <div class="thumbnail" *ngFor="let article of articles">
+        <div class="buttons">
+            <button id="edit-btn" routerLink="/article/{{article.id}}/edit"><i class="fas fa-edit"></i></button>
+            <button id="delete-btn" (click)="delete(article.id)"><i class="fas fa-times"></i></button>
+        </div>
+        <img src="{{article.picture}}" alt="thumbnail picture" width="300" height="200">
+        <p class="category" *ngFor="let categorie of article.Categories">{{categorie.titre | uppercase}}</p>
+        <h3>{{article.titre}}</h3>
+        <p>{{ article.contenu | slice:0:120 }}</p>
+        <a routerLink="/article/{{article.id}}">Read more...</a>
+    </div>
+</div>
+<div class="container">
+    <button routerLink="/article-add" id="add-btn">+ New article</button>
+</div>
+

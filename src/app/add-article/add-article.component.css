@@ -1,0 +1,52 @@
+h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    background-color: #7ea0c0;
+    max-width: 500px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form input[type=text] {
+    border-radius: 5px;
+    margin: 20px;
+    height: 30px;
+}
+
+.form input[type=checkbox], .form label {
+    margin: 10px;
+}
+
+.form label {
+    margin-left: 20px;
+}
+
+.btn {
+    background-color: rgb(43, 161, 73);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #ffffff;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 250ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}

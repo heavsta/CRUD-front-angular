@@ -1,0 +1,9 @@
+<div *ngIf="article" class="container">
+    <h2>Edit {{article.titre}} Article</h2>
+  <form class="form" [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+    <input type="text" name="titre" placeholder="Title" formControlName="titre">
+    <input type="text" name="contenu" placeholder="Content" formControlName="contenu">
+    <input type="text" name="picture" placeholder="https://pics.com/mypic.jpg" formControlName="picture">
+    <button type="submit" class="btn" [disabled]="!FormData.valid">Edit</button>
+  </form>
+</div>

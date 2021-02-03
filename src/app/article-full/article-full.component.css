@@ -1,0 +1,14 @@
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}

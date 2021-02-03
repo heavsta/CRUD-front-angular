@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Create a new Article</h2>
+  <form class="form" [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+    <input type="text" name="titre" placeholder="Title" formControlName="titre">
+    <input type="text" name="contenu" placeholder="Content" formControlName="contenu">
+    <label for="visible">Visible: <input type="checkbox" name="visible" formControlName="visible"></label>
+    <input type="text" name="auteur" placeholder="Author" formControlName="auteur">
+    <input type="text" name="picture" placeholder="https://pics.com/mypic.jpg" formControlName="picture">
+    <button type="submit" class="btn" [disabled]="!FormData.valid">Submit</button>
+  </form>
+</div>
